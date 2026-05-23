@@ -6,7 +6,28 @@ import xml.etree.ElementTree as ET
 from urllib.parse import urlparse
 from collections import deque, Counter
 import subprocess
+# ==== Script created by Scott Chandler 
+"""
+=============================================================================
+ Screaming Frog Crawl Runner
+=============================================================================
 
+ A Python wrapper around Screaming Frog SEO Spider that automates a full
+ site crawl, exports the results, and (optionally) post-processes them
+ into something you can hand to a client or feed into the next step of
+ your pipeline.
+
+ Author:   Scott Chandler
+ Site:     https://chandlerdigital.ca
+ License:  MIT - free to use, modify, and redistribute. No warranty,
+           express or implied. If it saves you a Friday afternoon,
+           great. If it breaks, you get to keep both pieces.
+
+ Free to fork, free to copy, free to ship. Attribution is appreciated
+ but not required. If you build something cool on top of it, I'd
+ genuinely love to hear about it - drop me a note on LinkedIn.
+=============================================================================
+"""
 # === CONFIGURATION ===
 domain = "https://www.exampledomain.com"
 sitemap_url = "https://www.exampledomain.com/sitemap.xml"
